@@ -1,0 +1,105 @@
+footer{
+    padding: 12px 0;
+}
+
+.logo{
+    padding: 0px 16px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.circle-link{
+    position: absolute;
+    margin: 0 15% 0 22%;
+}
+
+.circle-link ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0ffff;
+    align-items: center;   
+    justify-content: center;
+    list-style-type: none;
+    display: inline-flex;
+    width: 100%;
+}
+
+.circle-link ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+    color: rgb(14, 164, 233);
+    text-decoration: dashed;
+    padding: 20px;
+}
+
+.circle-link ul li a:hover{
+    transform: translateY(-0.90rem);
+    text-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.row{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #f0ffff;
+    display: flex;
+}
+
+@media only screen and (max-width: 2005px){
+    .circle-link{
+        position: absolute;
+        margin: 0 5% 0 7%;
+    }
+}
+
+@media only screen and (max-width: 1387px) {
+
+    .logo{
+        display: none;
+    }
+
+    .circle-link{
+        position: absolute;
+        right: 9px;
+        left: 9px;
+        float: right;
+        margin: 0 0 0 0;
+    }
+
+    .row{
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #f0ffff;
+    }
+
+    .circle-link ul li a{
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: 1s ease-out;
+        color: rgb(14, 164, 233);
+        text-decoration: dashed;
+        padding: 20px;
+        padding-right: 100px;
+
+    }
+
+    .circle-link ul{
+        right: 0px;
+        top: 64px;   
+        display: inline-block; 
+        padding: 10px 0 0 0;
+    }
+
+    .circle-link ul li{
+        display: inline-block;
+        margin: 0;
+        padding: 0 0 0 26px;
+    }
+
+}
