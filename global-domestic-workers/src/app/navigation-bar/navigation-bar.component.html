@@ -1,0 +1,30 @@
+<header>
+  <div class="navigation">
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-3 text-end">
+        <div class="logo">
+          <img
+          width="95"
+          alt="Global Domestic Workers Logo"
+          src="\assets\img\logo1.0.png"
+          />
+        </div>
+      </div>
+      <div class="col-md-9 col-sm-9 col-9 text-end">
+        <div class="menu-icon" [class.menuIconClass]="menuIconVariable" (click)="openPageMenu();">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="page-menu" [class.pageMenuClass]="pageMenuVariable"> 
+          <ul>
+            <li>Contact us</li>
+            <li>About us</li>
+            <li>Domestic workers</li>
+            <li>Home</li>
+          </ul>
+        </div> 
+      </div>
+    </div>
+  </div>
+</header>
