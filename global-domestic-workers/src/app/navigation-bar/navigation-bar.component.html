@@ -18,10 +18,10 @@
         </div>
         <div class="page-menu" [class.pageMenuClass]="pageMenuVariable"> 
           <ul>
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/domestic-workers">Domestic workers</a></li>
-            <li><a routerLink="/about-us">About us</a></li>
-            <li><a routerLink="/contact-us">Contact us</a></li>
+            <li><a href="/" (click)="$event">Home</a></li>
+            <li><a href="/domestic-workers">Domestic workers</a></li>
+            <li><a href="/about-us" (click)="$event">About us</a></li>
+            <li><a href="/contact-us">Contact us</a></li>
           </ul>
         </div> 
       </div>
