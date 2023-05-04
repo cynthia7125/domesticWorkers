@@ -1,0 +1,61 @@
+<body>
+    <div class="about">
+        <div class="row-name">
+            <div class="name">
+                <div class="col-md-3 col-sm-3 col-3 text-end">
+                    <h1>Contact Us</h1>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-3 text-end">
+                <span class="info-circle"></span>              
+                <h1>Use this page to let us know of any conflicts, satisfactions, complaints, and recommendation</h1>
+                <form (ngSubmit)="submitForm()" #contactForm="ngForm"> 
+                    <div class="field">
+                        <input 
+                            placeholder="Name" 
+                            type="text" 
+                            name="name" 
+                            class="input" 
+                            [(ngModel)]="name" 
+                            #nameInput="ngModel"
+                            required>
+                            <div class="errorEntry" *ngIf="nameInput.invalid && nameInput.touched">
+                                Your name is required.
+                            </div>
+                    </div>
+                    <div class="field">
+                        <input 
+                            placeholder="Email address" 
+                            type="text" 
+                            name="email" 
+                            class="input" 
+                            [(ngModel)]="email"
+                            #emailInput="ngModel" 
+                            required>
+                            <div class="errorEntry" *ngIf="emailInput.invalid && emailInput.touched">
+                                A valid email is required.
+                            </div>
+                    </div>
+                    <div class="field">
+                        <textarea placeholder="Message" name="message" class="message" [(ngModel)]="message" required></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="button"
+                        [disabled]="contactForm.invalid">
+                        Submit
+                    </button>
+                </form> 
+            </div>
+            
+            <div class="col-md-9 col-sm-9 col-9 text-end">
+                <div class="image-container">
+                    <img src= "\assets\img\customer service.png" alt="Call center vector image">   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
