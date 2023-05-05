@@ -11,45 +11,17 @@
             <div class="col-md-3 col-sm-3 col-3 text-end">
                 <span class="info-circle"></span>              
                 <h1>Use this page to let us know of any conflicts, satisfactions, complaints, and recommendation</h1>
-                <form (ngSubmit)="submitForm()" #contactForm="ngForm"> 
-                    <div class="field">
-                        <input 
-                            placeholder="Name" 
-                            type="text" 
-                            name="name" 
-                            class="input" 
-                            [(ngModel)]="name" 
-                            #nameInput="ngModel"
-                            required>
-                            <div class="errorEntry" *ngIf="nameInput.invalid && nameInput.touched">
-                                Your name is required.
-                            </div>
-                    </div>
-                    <div class="field">
-                        <input 
-                            placeholder="Email address" 
-                            type="text" 
-                            name="email" 
-                            class="input" 
-                            [(ngModel)]="email"
-                            #emailInput="ngModel" 
-                            required>
-                            <div class="errorEntry" *ngIf="emailInput.invalid && emailInput.touched">
-                                A valid email is required.
-                            </div>
-                    </div>
-                    <div class="field">
-                        <textarea placeholder="Message" name="message" class="message" [(ngModel)]="message" required></textarea>
-                    </div>
-                    <button 
-                        type="submit" 
-                        class="button"
-                        [disabled]="contactForm.invalid">
-                        Submit
-                    </button>
-                </form> 
+                <span class="questions">
+                    <mat-icon>home</mat-icon>
+                    <div class="fa-solid fa-plus fa-2xs" id="add"></div>
+                </span><br><br><br>
+                <span class="questions"></span><br><br><br>
+                <span class="questions"></span><br><br><br>
+                <span class="questions"></span><br><br><br>  
+                <span class="questions"></span><br><br><br>
+                <span class="questions"></span><br><br><br>
+                <span class="questions"></span>
             </div>
-            
             <div class="col-md-9 col-sm-9 col-9 text-end">
                 <div class="image-container">
                     <img src= "\assets\img\customer service.png" alt="Call center vector image">   
