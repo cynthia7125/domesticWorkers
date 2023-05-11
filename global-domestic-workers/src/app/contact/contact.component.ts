@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import questions from './questions.json';
+
+interface question {
+  question: string;
+  answer: string;
+}
 
 @Component({
   selector: 'app-contact',
@@ -6,12 +12,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  name: any;
-  email: any;
-  message: any;
+  question: any;
+  answer: any;
   
   submitForm(){
-    const message = `Thank you for your contribution ${this.name}.`
+    const message = `Thank you for your contribution.`
     alert(message);
   }
+  questions: question[] = questions;
 }

@@ -12,7 +12,23 @@ body {
     height: 563px;
     display: flex;
     overflow: hidden; 
-} 
+}
+
+.question {
+    border-radius: 5px 15px;
+    background: #ace9f0;
+    padding: 5px;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 32px;
+    margin: 8px;
+}
+
+.quest {
+    color: black;
+    font-size: 22px;
+}
 
 .forms {
     background-color: white;
@@ -20,9 +36,9 @@ body {
 
 .image-container img {
     position: absolute;
-    width: 55%;
+    width: 1030px;
     left: 45%;
-    top: 15%;
+    top: 109px;
 }
 
 .image-container {
@@ -37,14 +53,20 @@ body {
 
 .info-circle {
     height: 780px;
-    width: 100%;
+    width: 1197px;
     background-color: #f0ffff;
     border-radius: 50%;
     float: left;
     z-index: 0;
-    top: -114px;
-    right: 235px;
+    top: -105px;
+    right: 186px;
     position: relative;
+}
+
+.data {
+    position: absolute;
+    width: 38%;
+    left: 6%;
 }
 
 .row-name {
@@ -66,8 +88,6 @@ body {
 
 .row h1 {
     position: relative;
-    right: 91%;
-    width: 150%;
 }
 
 .field input {
@@ -198,13 +218,13 @@ body {
 
     .info-circle {
         height: 780px;
-        width: 100%;
+        width: 1197px;
         background-color: #f0ffff;
         border-radius: 50%;
         float: left;
         z-index: 0;
-        top: -114px;
-        right: 0px;
+        top: -105px;
+        right: 186px;
         position: relative;
     }
 
