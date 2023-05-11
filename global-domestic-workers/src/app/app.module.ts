@@ -8,8 +8,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from 'src/environment/environment';
 
 @NgModule({
   declarations: [
@@ -23,8 +21,7 @@ import { environment } from 'src/environment/environment';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
